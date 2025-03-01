@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "934245799643",
+    "project_id": "final-flutter-ggomdong",
+    "storage_bucket": "final-flutter-ggomdong.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934245799643:android:0f486a94e89cb07e411efe",
+        "android_client_info": {
+          "package_name": "com.example.final_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsRyDvE-jmYW5KxsOC5pb4wT2r-9weqyA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
