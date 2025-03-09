@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:final_project/constants/sizes.dart';
 import 'package:final_project/firebase_options.dart';
@@ -11,6 +12,7 @@ import 'package:final_project/router.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  GoRouter.optionURLReflectsImperativeAPIs = true;
 
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
@@ -51,15 +53,15 @@ class App extends ConsumerWidget {
       theme: ThemeData(
         useMaterial3: true,
         brightness: Brightness.light,
-        scaffoldBackgroundColor: Colors.white,
-        primaryColor: const Color(0xFF0B64E0),
+        scaffoldBackgroundColor: Color(0xFFECE6C2),
+        primaryColor: const Color(0xFFFFA6F7),
         textSelectionTheme: const TextSelectionThemeData(
           cursorColor: Color(0xFF5098E9),
         ),
         splashColor: Colors.transparent,
         appBarTheme: const AppBarTheme(
           foregroundColor: Colors.black,
-          backgroundColor: Colors.white,
+          backgroundColor: Color(0xFFECE6C2),
           surfaceTintColor: Colors.white,
           elevation: 0,
           titleTextStyle: TextStyle(
@@ -73,14 +75,14 @@ class App extends ConsumerWidget {
         useMaterial3: true,
         textTheme: Typography.whiteMountainView,
         brightness: Brightness.dark,
-        scaffoldBackgroundColor: Colors.black,
-        primaryColor: const Color(0xFF5098E9),
+        scaffoldBackgroundColor: Color(0xFF2C2C2C),
+        primaryColor: const Color(0xFFFFA6F7),
         textSelectionTheme: const TextSelectionThemeData(
           cursorColor: Color(0xFF5098E9),
         ),
         appBarTheme: AppBarTheme(
           surfaceTintColor: Colors.grey.shade900,
-          backgroundColor: Colors.black,
+          backgroundColor: Color(0xFF2C2C2C),
           foregroundColor: Colors.white,
           titleTextStyle: const TextStyle(
             color: Colors.white,
@@ -93,9 +95,6 @@ class App extends ConsumerWidget {
           iconTheme: IconThemeData(
             color: Colors.grey.shade100,
           ),
-        ),
-        bottomAppBarTheme: BottomAppBarTheme(
-          color: Colors.grey.shade900,
         ),
       ),
     );
